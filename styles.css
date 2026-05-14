@@ -27,6 +27,11 @@ body {
   overflow-x: hidden;
 }
 
+img,
+svg {
+  max-width: 100%;
+}
+
 .container {
   width: min(1500px, calc(100vw - 64px));
   margin: 0 auto;
@@ -123,6 +128,7 @@ body {
   align-items: center;
   gap: 5px;
   font-weight: 600;
+  min-width: 0;
 }
 
 .ticker-logo {
@@ -318,6 +324,7 @@ body {
 
 .lead-copy a {
   color: #1e1e1e;
+  overflow-wrap: anywhere;
 }
 
 .read-time {
@@ -397,6 +404,7 @@ body {
 
 .right-rail {
   border-left: 1px solid #c5c5c5;
+  border-right: 1px solid #c5c5c5;
   padding-left: 0;
   position: sticky;
   top: 0;
@@ -419,6 +427,7 @@ body {
   border-bottom: 1px solid #9d9d9d;
   padding: 12px 20px;
   width: 100%;
+  background: var(--paper);
 }
 
 .rail-card:last-child {
@@ -477,7 +486,7 @@ body {
 
   .wordmark {
     font-size: 62px;
-    text-align: left;
+    text-align: center;
   }
 
   .right-meta {
@@ -502,10 +511,51 @@ body {
 
   .profile-card {
     width: 100%;
-    max-width: 320px;
+    max-width: none;
     flex-basis: auto;
+    height: auto;
     max-height: none;
     overflow: visible;
+    display: grid;
+    grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
+    gap: 24px;
+    align-items: start;
+    padding: 22px;
+  }
+
+  .portrait-wrap {
+    margin: 0;
+  }
+
+  .profile-content {
+    padding: 0;
+    min-width: 0;
+  }
+
+  .profile-content h2,
+  .profile-content .role {
+    text-align: center;
+  }
+
+  .profile-content .role {
+    max-width: none;
+  }
+
+  .profile-content h2 {
+    font-size: 24px;
+  }
+
+  .profile-content .role {
+    font-size: 18px;
+  }
+
+  .profile-content p,
+  .profile-content a {
+    font-size: 16px;
+  }
+
+  .profile-content h3 {
+    margin-top: 28px;
   }
 
   .right-rail {
@@ -525,5 +575,249 @@ body {
   body {
     overflow: auto;
     height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    min-width: 0;
+  }
+
+  .container {
+    width: min(1500px, calc(100vw - 24px));
+  }
+
+  .header {
+    padding-top: 8px;
+  }
+
+  .top-utility {
+    gap: 8px;
+    padding-bottom: 8px;
+  }
+
+  .left-meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    order: 2;
+  }
+
+  .left-meta p {
+    margin: 0;
+    font-size: 11px;
+  }
+
+  .right-meta {
+    display: none;
+  }
+
+  .wordmark {
+    order: 1;
+    font-size: clamp(38px, 13vw, 54px);
+    line-height: 0.92;
+    text-align: center;
+  }
+
+  .section-nav {
+    justify-content: center;
+    gap: 12px 18px;
+    padding: 9px 0 10px;
+  }
+
+  .section-nav a {
+    font-size: 14px;
+  }
+
+  .ticker {
+    gap: 10px;
+    align-items: flex-start;
+    padding: 8px 0;
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .ticker .live {
+    flex: 0 0 auto;
+  }
+
+  #live-update {
+    display: inline;
+    flex: 1;
+    overflow-wrap: anywhere;
+  }
+
+  .ticker-logo {
+    height: 13px;
+  }
+
+  .page-grid {
+    margin-top: 8px;
+    border-top: 1px solid #9b9b9b;
+  }
+
+  .lead-story {
+    gap: 14px;
+    padding: 10px 0 14px;
+  }
+
+  .profile-card {
+    border-width: 3px;
+    grid-template-columns: minmax(132px, 34%) minmax(0, 1fr);
+    gap: 12px 14px;
+    padding: 12px;
+  }
+
+  .portrait-wrap {
+    width: 100%;
+    aspect-ratio: 1;
+    margin: 0;
+    grid-row: 1 / span 3;
+  }
+
+  .profile-content {
+    display: contents;
+  }
+
+  .profile-content h2 {
+    grid-column: 2;
+    align-self: end;
+    font-size: 19px;
+  }
+
+  .profile-content p,
+  .profile-content a {
+    font-size: 13px;
+  }
+
+  .profile-content .role {
+    grid-column: 2;
+    align-self: start;
+    max-width: none;
+    margin: -4px 0 0;
+    font-size: 13px;
+  }
+
+  .profile-rows {
+    grid-column: 2;
+  }
+
+  .profile-content h3 {
+    grid-column: 1 / -1;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
+  .profile-links {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2px 12px;
+  }
+
+  .profile-links a {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .profile-rows p,
+  .profile-links a {
+    gap: 7px;
+    margin: 5px 0;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+  }
+
+  .icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .lead-copy {
+    overflow: visible;
+  }
+
+  .lead-copy h1 {
+    font-size: clamp(34px, 13vw, 44px);
+    line-height: 1;
+  }
+
+  .lead-copy p {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .center-updates {
+    margin-top: 16px;
+  }
+
+  .center-updates h2,
+  .rail-card h2 {
+    font-size: 26px;
+  }
+
+  .update-item {
+    grid-template-columns: 1fr;
+    row-gap: 3px;
+    padding: 8px 0;
+  }
+
+  .update-date {
+    font-size: 11px;
+    padding-top: 0;
+  }
+
+  .update-text {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .brand-logo {
+    max-width: 54px;
+  }
+
+  .right-rail {
+    margin-top: 2px;
+  }
+
+  .rail-card {
+    padding: 12px 14px;
+  }
+
+  .rail-card p,
+  .rail-card a,
+  .rail-card li {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .attribution {
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-width: 420px) {
+  .profile-card {
+    grid-template-columns: 112px minmax(0, 1fr);
+    column-gap: 10px;
+    padding: 10px;
+  }
+
+  .profile-content h2 {
+    font-size: 18px;
+  }
+
+  .profile-content p,
+  .profile-content a,
+  .profile-content .role {
+    font-size: 12.5px;
+  }
+
+  .profile-links {
+    grid-template-columns: 1fr;
   }
 }

@@ -4,255 +4,152 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Priyadarsi Mishra</title>
-  <meta name="description" content="Priyadarsi Mishra — senior undergraduate at Texas A&M University researching representation learning, reasoning in agents, video understanding, and AI safety.">
+  <meta name="description" content="Priyadarsi Mishra - senior undergraduate at Texas A&M University researching video understanding, foundation models, AI safety, and LLM reasoning.">
   <link rel="icon" type="image/jpeg" href="assets/profile.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script>
     (function () {
-      const stored = localStorage.getItem("theme");
-      if (stored === "light" || stored === "dark") {
-        document.documentElement.dataset.theme = stored;
+      const theme = localStorage.getItem("theme");
+      if (theme === "light") {
+        document.documentElement.dataset.theme = "light";
       }
     })();
   </script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="#" class="site-name">Priyadarsi&nbsp;Mishra</a>
-      <nav class="site-nav">
-        <a href="#news">News</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a class="cv-link" href="https://drive.google.com/file/d/1bAxxqD34KljxVnLWydlxKxijx8M3ZibY/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a>
-        <button id="theme-toggle" aria-label="Toggle dark mode">
-          <svg class="icon-moon" viewBox="0 0 24 24"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
-          <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></svg>
-        </button>
+  <div class="wrapper">
+    <header>
+      <img class="profile-photo" src="assets/profile.jpg" alt="Portrait of Priyadarsi Mishra">
+      <h1>Priyadarsi Mishra</h1>
+      <p>Senior Undergraduate Student</p>
+      <p>Texas A&amp;M University</p>
+      <p class="email">priyadarsimishra [at] tamu [dot] edu</p>
+
+      <nav class="links" aria-label="Profile links">
+        <a href="https://scholar.google.com/citations?user=FfEYzAgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+          <svg viewBox="0 0 24 24"><path d="M12 3 2 10l10 7 10-7-10-7Z"/><path d="M6 13v4c1.8 2.2 10.2 2.2 12 0v-4"/></svg>
+        </a>
+        <a href="https://github.com/priyadarsimishra" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+          <svg class="filled" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.5 1.1 3.1.8.1-.7.4-1.1.7-1.4-2.2-.2-4.6-1.1-4.6-5A3.9 3.9 0 0 1 7 8.3c-.1-.3-.5-1.3.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5.2 0c2-1.3 2.8-1 2.8-1 .6 1.5.2 2.5.1 2.8a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.8-4.6 5 .4.3.8 1 .8 2v2.5c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/priyadarsi-mishra/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+          <svg class="filled" viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.3 10.1H5.9v7.5h2.4v-7.5Zm.2-2.3a1.4 1.4 0 1 0-2.8 0 1.4 1.4 0 0 0 2.8 0Zm9.6 5.6c0-2.3-1.2-3.5-3-3.5-1.4 0-2 .8-2.3 1.3v-1.1h-2.3v7.5h2.3v-4.2c0-1.1.2-2.2 1.6-2.2 1.3 0 1.3 1.2 1.3 2.2v4.1h2.4v-4.1Z"/></svg>
+        </a>
+        <a href="https://x.com/priyadarsimishr" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter">
+          <svg class="filled" viewBox="0 0 24 24"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.4-1.2 1.7-2.2-.8.5-1.6.8-2.5 1A4 4 0 0 0 12 8.1c0 .3 0 .6.1.9A11.4 11.4 0 0 1 3.8 4.8a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.8-.5v.1A4 4 0 0 0 6.4 13c-.5.1-1 .2-1.8.1a4 4 0 0 0 3.7 2.8A8.1 8.1 0 0 1 2.4 18 11.4 11.4 0 0 0 8.6 20c7.4 0 11.5-6.1 11.5-11.5v-.5c.8-.6 1.4-1.3 1.9-2.1Z"/></svg>
+        </a>
       </nav>
-    </div>
-  </header>
 
-  <main>
-    <div class="hero-band">
-      <div class="container">
-        <section id="about" class="hero">
-          <div class="portrait">
-            <div class="portrait-frame">
-              <div class="portrait-crop">
-                <img src="assets/profile.jpg" alt="Portrait of Priyadarsi Mishra">
-              </div>
-            </div>
-            <ul class="social">
-              <li>
-                <a href="mailto:priyadarsimishra@tamu.edu" aria-label="Email" title="Email">
-                  <svg viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://scholar.google.com/citations?user=FfEYzAgAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
-                  <svg viewBox="0 0 24 24"><path d="M12 3 2 10l10 7 10-7-10-7Z"/><path d="M6 13v4c1.8 2.2 10.2 2.2 12 0v-4"/></svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/priyadarsimishra" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
-                  <svg class="filled" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.5 1.1 3.1.8.1-.7.4-1.1.7-1.4-2.2-.2-4.6-1.1-4.6-5A3.9 3.9 0 0 1 7 8.3c-.1-.3-.5-1.3.1-2.8 0 0 .9-.3 2.8 1a9.6 9.6 0 0 1 5.2 0c2-1.3 2.8-1 2.8-1 .6 1.5.2 2.5.1 2.8a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.8-4.6 5 .4.3.8 1 .8 2v2.5c0 .3.2.6.8.5A10 10 0 0 0 12 2Z"/></svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/priyadarsi-mishra/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
-                  <svg class="filled" viewBox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14ZM8.3 10.1H5.9v7.5h2.4v-7.5Zm.2-2.3a1.4 1.4 0 1 0-2.8 0 1.4 1.4 0 0 0 2.8 0Zm9.6 5.6c0-2.3-1.2-3.5-3-3.5-1.4 0-2 .8-2.3 1.3v-1.1h-2.3v7.5h2.3v-4.2c0-1.1.2-2.2 1.6-2.2 1.3 0 1.3 1.2 1.3 2.2v4.1h2.4v-4.1Z"/></svg>
-                </a>
-              </li>
-              <li>
-                <a href="https://x.com/priyadarsimishr" target="_blank" rel="noopener noreferrer" aria-label="Twitter" title="Twitter">
-                  <svg class="filled" viewBox="0 0 24 24"><path d="M22 5.9c-.7.3-1.5.6-2.3.7.8-.5 1.4-1.2 1.7-2.2-.8.5-1.6.8-2.5 1A4 4 0 0 0 12 8.1c0 .3 0 .6.1.9A11.4 11.4 0 0 1 3.8 4.8a4 4 0 0 0 1.2 5.3c-.6 0-1.2-.2-1.8-.5v.1A4 4 0 0 0 6.4 13c-.5.1-1 .2-1.8.1a4 4 0 0 0 3.7 2.8A8.1 8.1 0 0 1 2.4 18 11.4 11.4 0 0 0 8.6 20c7.4 0 11.5-6.1 11.5-11.5v-.5c.8-.6 1.4-1.3 1.9-2.1Z"/></svg>
-                </a>
-              </li>
-            </ul>
-          </div>
+      <p>
+        <a class="cv-link" href="https://drive.google.com/file/d/1bAxxqD34KljxVnLWydlxKxijx8M3ZibY/view?usp=sharing" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
+      </p>
+    </header>
 
-          <div class="intro">
-            <h1>Priyadarsi Mishra</h1>
-            <p class="tagline">Senior Undergraduate Student, Computer Science</p>
-            <p class="affiliation">Texas A&M University · College Station, Texas</p>
-            <p>
-              Hello! I am a senior undergraduate student at Texas A&M University studying Computer Science
-              with minors in Statistics and Mathematics. I am fortunate to be advised by
-              <a href="https://tomergalanti.github.io/" target="_blank" rel="noopener noreferrer">Tomer Galanti</a>.
-              My current research interests are <strong>representation learning</strong>, <strong>reasoning in agents</strong>,
-              <strong>video understanding</strong>, and <strong>AI safety</strong>.
-            </p>
-            <p>
-              My recent work includes publications on LLM priors for ERM over programs and the alignment between
-              supervised and self-supervised contrastive learning. I have also worked on practical AI systems through
-              internships at BMW Group and eBay, where I built multimodal AI agents, RAG-based inference pipelines,
-              REST services, and internal tools for data analysis and campaign visualization.
-            </p>
-            <p>
-              I am always open to discussing research topics or ideas — please don't hesitate to
-              <a href="mailto:priyadarsimishra@tamu.edu">reach out</a>!
-            </p>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <section id="news" class="section">
-      <div class="container">
-        <h2>News</h2>
-        <ul class="timeline">
-          <li>
-            <span class="news-date">May 2026 – Aug 2026</span>
-            <span class="news-text">Software Engineer Intern @ <img class="logo-inline" src="assets/ebay.png" alt="eBay"> Ads.</span>
-          </li>
-          <li class="highlight">
-            <span class="news-date">Apr 2026</span>
-            <span class="news-text"><a href="https://arxiv.org/pdf/2510.14331" target="_blank" rel="noopener noreferrer">LLM Priors for ERM over Programs</a> was accepted to <strong>ICML 2026</strong>!</span>
-          </li>
-          <li class="highlight">
-            <span class="news-date">Jan 2026</span>
-            <span class="news-text"><a href="https://arxiv.org/pdf/2510.08852" target="_blank" rel="noopener noreferrer">On the Alignment Between Supervised and Self-Supervised Contrastive Learning</a> was accepted to <strong>ICLR 2026</strong>!</span>
-          </li>
-          <li>
-            <span class="news-date">Sep 2025 – Jan 2026</span>
-            <span class="news-text">Generative AI Research Intern at <img class="logo-inline logo-bmw" src="assets/bmw.png" alt="BMW"> BMW Group.</span>
-          </li>
-          <li>
-            <span class="news-date">May 2025 – Aug 2025</span>
-            <span class="news-text">Software Engineer Intern at <img class="logo-inline" src="assets/ebay.png" alt="eBay"> Ads.</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="research" class="section alt">
-      <div class="container">
-        <h2>Research Interests</h2>
-        <p class="section-lede">
-          My research interests center on building and understanding foundation models across language, vision, and video:
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hello! I am Priyadarsi Mishra, a senior undergraduate student at Texas A&amp;M University studying Computer Science
+          with minors in Statistics and Mathematics. I am fortunate to be advised by
+          <a href="https://tomergalanti.github.io/" target="_blank" rel="noopener noreferrer">Tomer Galanti</a>.
         </p>
-        <div class="interests">
-          <div class="interest">
-            <span class="interest-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="m12 2 8 4.5v9L12 20l-8-4.5v-9L12 2Z"/><path d="M12 11 4 6.5M12 11l8-4.5M12 11v9"/></svg>
-            </span>
-            <div>
-              <h3>Representation Learning</h3>
-              <p>What neural networks learn, and the alignment between supervised and self-supervised objectives.</p>
-            </div>
-          </div>
-          <div class="interest">
-            <span class="interest-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 3a5 5 0 0 1 5 5c0 1.7-.8 3.2-2 4.1V15h-6v-2.9A5.1 5.1 0 0 1 7 8a5 5 0 0 1 5-5Z"/><path d="M9 18h6M10 21h4"/></svg>
-            </span>
-            <div>
-              <h3>Reasoning in Agents</h3>
-              <p>LLM agents for algorithm design, and how priors shape reasoning and generalization.</p>
-            </div>
-          </div>
-          <div class="interest">
-            <span class="interest-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="2" y="6" width="13" height="12" rx="2"/><path d="m15 10 7-4v12l-7-4"/></svg>
-            </span>
-            <div>
-              <h3>Video Understanding</h3>
-              <p>Efficient Video LLMs, faster inference, and scalable multimodal systems.</p>
-            </div>
-          </div>
-          <div class="interest">
-            <span class="interest-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.6 8 11 4.6-2.4 8-6 8-11V5l-8-3Z"/><path d="m8.5 11.5 2.5 2.5 4.5-4.5"/></svg>
-            </span>
-            <div>
-              <h3>AI Safety</h3>
-              <p>Interpretability for LLMs/VLMs, hallucination mitigation, and bias reduction.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        <p>
+          My research interests lie broadly in multimodal reasoning, world models, and efficient AI systems. I am
+          particularly interested in understanding how models learn representations of temporal and physical structure,
+          how those representations support reasoning and prediction, and how model and system design can make these
+          capabilities more efficient and scalable. I also have a complementary interest in reliable agentic reasoning,
+          including how language models use feedback, verification, and interaction while maintaining robust reasoning.
+        </p>
+        <p>
+          My recent work spans representation learning, LLM-guided program search, multimodal systems, world models, and
+          agentic reasoning. I am always happy to discuss research ideas or potential collaborations via email.
+        </p>
+      </section>
 
-    <section id="publications" class="section">
-      <div class="container">
+      <section id="research">
+        <h2>Research Interests</h2>
+        <ul>
+          <li><strong>Multimodal Reasoning &amp; World Models:</strong> video understanding, predictive representations, physical and temporal reasoning & representation geometry</li>
+          <li><strong>Efficient AI Systems:</strong> efficient model architectures, speculative and parallel generation & adaptive computation</li>
+          <li><strong>Reliable Agentic Reasoning:</strong> verification, feedback, self-improving agents, multi-agent interaction & robustness to unreliable or sycophantic behavior</li>
+        </ul>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul>
+          <li><strong>[May 2026 - Aug. 2026]</strong> Software Engineer Intern @ <img class="inline-logo" src="assets/ebay.png" alt="eBay"> Ads.</li>
+          <li><strong>[Apr. 2026]</strong> <a href="https://arxiv.org/pdf/2510.14331" target="_blank" rel="noopener noreferrer">LLM Priors for ERM over Programs</a> was accepted to <strong>ICML 2026</strong>.</li>
+          <li><strong>[Jan. 2026]</strong> <a href="https://arxiv.org/pdf/2510.08852" target="_blank" rel="noopener noreferrer">On the Alignment Between Supervised and Self-Supervised Contrastive Learning</a> was accepted to <strong>ICLR 2026</strong>.</li>
+          <li><strong>[Sept. 2025 - Jan. 2026]</strong> Generative AI Research Intern @ <img class="inline-logo bmw-logo" src="assets/bmw.png" alt="BMW"> BMW Group.</li>
+          <li><strong>[May 2025 - Aug. 2025]</strong> Software Engineer Intern @ <img class="inline-logo" src="assets/ebay.png" alt="eBay"> Ads.</li>
+        </ul>
+      </section>
+
+      <section id="publications">
         <h2>Publications</h2>
-        <ol class="pub-list">
-          <li class="pub">
-            <div class="pub-meta">
-              <span class="pub-venue preprint">Preprint 2026</span>
-              <a class="pub-btn" href="https://arxiv.org/abs/2605.14141" target="_blank" rel="noopener noreferrer">arXiv</a>
-            </div>
-            <p class="pub-title"><a href="https://arxiv.org/abs/2605.14141" target="_blank" rel="noopener noreferrer">Distribution-Aware Algorithm Design with LLM Agents</a></p>
-            <p class="pub-authors">S. Koganti, <span class="me">P. Mishra</span>, P. Beneventano, T. Galanti</p>
-          </li>
-          <li class="pub">
-            <div class="pub-meta">
-              <span class="pub-venue">ICML 2026</span>
-              <a class="pub-btn" href="https://arxiv.org/pdf/2510.14331" target="_blank" rel="noopener noreferrer">arXiv</a>
-            </div>
-            <p class="pub-title"><a href="https://arxiv.org/pdf/2510.14331" target="_blank" rel="noopener noreferrer">LLM Priors for ERM over Programs</a></p>
-            <p class="pub-authors"><span class="me">P. Mishra</span>*, S. Singhal*, E. Malach, T. Galanti <span class="pub-note">(*Equal contribution)</span></p>
-          </li>
-          <li class="pub">
-            <div class="pub-meta">
-              <span class="pub-venue">ICLR 2026</span>
-              <a class="pub-btn" href="https://arxiv.org/pdf/2510.08852" target="_blank" rel="noopener noreferrer">arXiv</a>
-            </div>
-            <p class="pub-title"><a href="https://arxiv.org/pdf/2510.08852" target="_blank" rel="noopener noreferrer">On the Alignment Between Supervised and Self-Supervised Contrastive Learning</a></p>
-            <p class="pub-authors">A. Luthra, <span class="me">P. Mishra</span>, T. Galanti</p>
-          </li>
-        </ol>
-      </div>
-    </section>
 
-    <section id="experience" class="section alt">
-      <div class="container">
+        <article class="publication">
+          <p class="pub-title">
+            <a href="https://arxiv.org/abs/2605.14141" target="_blank" rel="noopener noreferrer">Distribution-Aware Algorithm Design with LLM Agents</a>
+          </p>
+          <p>S. Koganti, <strong>Priyadarsi Mishra</strong>, P. Beneventano, T. Galanti</p>
+          <p><em>Preprint, 2026.</em></p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2605.14141" target="_blank" rel="noopener noreferrer">arXiv</a></p>
+        </article>
+
+        <article class="publication">
+          <p class="pub-title">
+            <a href="https://arxiv.org/pdf/2510.14331" target="_blank" rel="noopener noreferrer">LLM Priors for ERM over Programs</a>
+          </p>
+          <p><strong>Priyadarsi Mishra</strong>*, Shivam Singhal*, Eran Malach, Tomer Galanti</p>
+          <p><em>International Conference on Machine Learning (ICML), 2026. *Equal contribution.</em></p>
+          <p class="pub-links"><a href="https://arxiv.org/pdf/2510.14331" target="_blank" rel="noopener noreferrer">PDF</a></p>
+        </article>
+
+        <article class="publication">
+          <p class="pub-title">
+            <a href="https://arxiv.org/pdf/2510.08852" target="_blank" rel="noopener noreferrer">On the Alignment Between Supervised and Self-Supervised Contrastive Learning</a>
+          </p>
+          <p>Achleshwar Luthra, <strong>Priyadarsi Mishra</strong>, Tomer Galanti</p>
+          <p><em>International Conference on Learning Representations (ICLR), 2026.</em></p>
+          <p class="pub-links"><a href="https://arxiv.org/pdf/2510.08852" target="_blank" rel="noopener noreferrer">PDF</a></p>
+        </article>
+      </section>
+
+      <section id="experience">
         <h2>Experience</h2>
-        <div class="exp-grid">
-          <div class="exp-card">
-            <div class="exp-logo"><img src="assets/ebay.png" alt="eBay logo"></div>
-            <div class="exp-body">
-              <h3>eBay Ads</h3>
-              <p class="exp-role">Software Engineer Intern</p>
-              <p class="exp-dates">May 2025 – Aug 2025 · May 2026 – Aug 2026</p>
-            </div>
-          </div>
-          <div class="exp-card">
-            <div class="exp-logo"><img src="assets/bmw.png" alt="BMW logo"></div>
-            <div class="exp-body">
-              <h3>BMW Group</h3>
-              <p class="exp-role">Generative AI Research Intern</p>
-              <p class="exp-dates">Sep 2025 – Jan 2026</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        <ul>
+          <li><strong>Software Engineer Intern</strong>, <img class="inline-logo" src="assets/ebay.png" alt="eBay"> Ads, May 2026 - Aug. 2026.</li>
+          <li><strong>Generative AI Research Intern</strong>, <img class="inline-logo bmw-logo" src="assets/bmw.png" alt="BMW"> BMW Group, Sept. 2025 - Jan. 2026.</li>
+          <li><strong>Software Engineer Intern</strong>, <img class="inline-logo" src="assets/ebay.png" alt="eBay"> Ads, May 2025 - Aug. 2025.</li>
+        </ul>
+      </section>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p class="footer-note">Always happy to talk research.</p>
-      <a class="footer-mail" href="mailto:priyadarsimishra@tamu.edu">priyadarsimishra@tamu.edu</a>
-      <p class="footer-copy">© <span id="year">2026</span> Priyadarsi Mishra</p>
-    </div>
-  </footer>
-
+      <footer>
+        <p>Design inspired by <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener noreferrer">Minimal Light</a>.</p>
+      </footer>
+    </main>
+  </div>
+  <button class="theme-toggle" type="button" aria-label="Toggle light mode">
+    <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3l1.7 1.7M17 17l1.7 1.7M18.7 5.3 17 7M7 17l-1.7 1.7"/></svg>
+    <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z"/></svg>
+  </button>
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const themeToggle = document.querySelector(".theme-toggle");
 
-    const toggle = document.getElementById("theme-toggle");
-    toggle.addEventListener("click", () => {
-      const root = document.documentElement;
-      const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      const current = root.dataset.theme || (systemDark ? "dark" : "light");
-      const next = current === "dark" ? "light" : "dark";
-      root.dataset.theme = next;
-      localStorage.setItem("theme", next);
+    themeToggle.addEventListener("click", () => {
+      const isLight = document.documentElement.dataset.theme === "light";
+      if (isLight) {
+        document.documentElement.removeAttribute("data-theme");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.dataset.theme = "light";
+        localStorage.setItem("theme", "light");
+      }
     });
   </script>
 </body>
